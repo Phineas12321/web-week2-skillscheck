@@ -54,7 +54,7 @@ Outside of the for loop but still inside of setColor, invoke the function called
 These arguments should be the three items remaining in your colors array. */
 
 // CODE HERE
-function setColor(arr){
+let setColor = arr => {
     arr.splice(0, arr.length-3)
     for(let i = 0; i < arr.length; i++){
         if(arr[i] === 'blue'){
@@ -71,7 +71,7 @@ which will take each item of the array as an argument. Remember, you did not cre
 The createLi function is a function we created that determines how the content is displayed.*/
 
 // CODE HERE
-function setPowers(arr){
+let setPowers = arr => {
     for(let i = 0; i < arr.length; i++){
         createLi(arr[i])
     }
@@ -85,7 +85,7 @@ Outside of the loop but still in the redactInfo function, run the function redac
 which is a function we created that will update the text on the screen.*/
 
 // CODE HERE
-function redactInfo(obj){
+let redactInfo = obj => {
     for(let key in obj){
         obj[key] = 'redacted'
     }
